@@ -2,20 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import seaborn as sns
-import plotly.express as px
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-from statsmodels.tsa.statespace.sarimax import SARIMAX
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import RandomizedSearchCV
-from sklearn.feature_selection import RFE
-from sklearn.metrics import mean_squared_error, mean_absolute_error
-from keras.models import Sequential
-from keras.layers import LSTM, Dense, Dropout
-from sklearn.preprocessing import MinMaxScaler
-from scripts.data_processing import load_data, preprocess_data, load_all_data, preprocess_all_data, merge_datasets
-from scripts.model_training import train_random_forest, train_rf_model
-from scripts.model_evaluation import evaluate_model
 
 # Load and preprocess data
 btc_file = 'data/btc.xlsx'
